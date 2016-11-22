@@ -13,13 +13,13 @@ void quick_sort(int* a, int first, int last)
 	int key = a[first];
 	while (first < last)
 	{
-		while (first < last && key <= a[last])
+		while (first < last && key >= a[last])
 		{
 			--last;
 		}
 		a[first] = a[last];
 		a[last] = key;
-		while (first < last && key >= a[first])
+		while (first < last && key <= a[first])
 		{
 			++first;
 		}
@@ -36,7 +36,7 @@ void bubble_sort(int* a, int length)
 	{
 		for (int j = i +1; j < length; j++)
 		{
-			if (a[i] > a[j])
+			if (a[i] < a[j])
 			{
 				int temp = a[j];
 				a[j] = a[i];
