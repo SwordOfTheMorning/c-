@@ -16,7 +16,7 @@ void print_tree(TNode *root);
 
 int main()
 {
-	/*append(63);
+	append(63);
 	append(45);
 	append(32);
 	append(77);
@@ -24,8 +24,8 @@ int main()
 	append(21);
 	append(17); 
 	print_tree(root);
-	free_tree(root);*/
-	string a = "aaa\taaa\t";
+	free_tree(root);
+	/*string a = "aaa\taaa\t";
 	for (int i = 0; i < a.size(); ++i)
 	{
 		if(a[i] == '\t')
@@ -37,7 +37,7 @@ int main()
 	cout<< a.c_str() <<endl;
 	int j,k,l,m;
 	int i=(j=4,k=8,l=16,m=32);
-	cout<<i<<endl;
+	cout<<i<<endl;*/
 	system("pause");
 	return 0;
 }
