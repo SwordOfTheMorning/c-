@@ -1,2 +1,4 @@
 all:
     g++ -g -std=c++11 C11.cpp
+	g++ Clua.cpp -llua -ldl
+	g++ -o ctestlib.so -fPIC -shared ctestlib.cpp -llua -ldl	
